@@ -1,2 +1,2 @@
-# maxfm_talon
-A repository of Talon commands
+# maxfm_talon1
+A repository of custom scripts for Talon Voice.
