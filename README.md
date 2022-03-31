@@ -1,2 +1,2 @@
 # maxfm_talon
-A repository of customized talent commands
+A repository of custom Talon commands
