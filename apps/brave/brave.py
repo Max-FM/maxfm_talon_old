@@ -14,7 +14,7 @@ and app.bundle: com.brave.Browser
 """
 mod.apps.brave = """
 os: linux
-and app.name: brave-browser
+and app.name: Brave-browser
 """
 ctx.matches = r"""
 app: brave
