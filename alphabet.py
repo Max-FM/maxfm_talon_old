@@ -1,8 +1,9 @@
 from talon import Context
 ctx = Context()
 
-# Need to make the file context more specific than knausj_talon\code\keys.py file in order to successfully override.
 # TODO: The "help alphabet" menu does not update to show the new alphabet and instead shows the original alphabet. Need to find a workaround. 
+
+# Need to make the file context more specific than knausj_talon\code\keys.py file in order to successfully override.
 ctx.matches = r"""
 os: windows
 os: mac
