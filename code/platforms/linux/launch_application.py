@@ -7,18 +7,18 @@ ctx = Context()
 ctx.matches = """
 os: linux
 """
+# Create predefined list of launchable applications. 
+# TODO: Make importable from CSV.
+mod.list("launch", desc="all launchable applications")
+ctx.lists["user.launch"] = {
+    "terminal": "gnome-terminal",
+    "code": "code",
+    "brave": "brave-browser",
+    "slack": "slack"
+}
 
 @mod.action_class
-class Actions:
-    def launch_gnome_terminal():
-        """Hacky way of opening a terminal in Linux."""
-        subprocess.run("gnome-terminal")
-    def launch_vscode():
-        """Hacky way of launching VS Code in Linux."""
-        subprocess.run("code")
-    def launch_brave():
-        """Hacky way of launching Brave Browser in Linux."""
-        subprocess.run("brave-browser")
-    def launch_slack():
-        """Hacky way of launching Slack in Linux."""
-        subprocess.run("slack")
+class Actions:    
+    def launch_application(app: str):
+        """Hacky way of opening applications in Linux."""
+        subprocess.run(app)
