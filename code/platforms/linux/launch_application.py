@@ -4,6 +4,7 @@ from ...user_settings import get_list_from_csv # Probably not the best way to im
 mod = Module()
 ctx = Context()
 
+# Written specifically for Ubuntu.
 ctx.matches = """
 os: linux
 """
@@ -13,9 +14,10 @@ default_applications = {
     "chrome": "google-chrome",
     "brave": "brave-browser",
     "text editor": "gedit",
-    "code": "code", # vscode
+    "code": "code",
+    "slack": "slack",
+    "files": "nautilus",
     "settings": "gnome-control-center",
-    "slack": "slack"
 }
 
 # Define list of launchable applications to be passed to knausj_talon.
@@ -30,5 +32,5 @@ ctx.lists["user.launch"] = get_list_from_csv(
 @mod.action_class
 class Actions:
     def launch_terminal():
-        """Launch gnome-terminal in Linux (specifically Ubuntu)."""
+        """Launch gnome-terminal."""
         actions.key("ctrl-alt-t")
