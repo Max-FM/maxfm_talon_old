@@ -1,5 +1,5 @@
 from talon import Module, Context, actions
-from ...user_settings import get_list_from_csv # Not the best way to import this, but it works.
+from ...user_settings import get_list_from_csv # Probably not the best way to import this, but it works.
 
 mod = Module()
 ctx = Context()
@@ -12,7 +12,9 @@ default_applications = {
     "firefox": "firefox",
     "chrome": "google-chrome",
     "brave": "brave-browser",
-    "code": "code",
+    "text editor": "gedit",
+    "code": "code", # vscode
+    "settings": "gnome-control-center",
     "slack": "slack"
 }
 

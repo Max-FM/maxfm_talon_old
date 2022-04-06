@@ -2,6 +2,8 @@ app_name,spoken_name
 gnome-terminal,terminal
 google-chrome,chrome
 brave-browser,brave
+gedit,text editor
+gnome-control-center,settings
 firefox
 code
 slack
