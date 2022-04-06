@@ -1,6 +1,5 @@
 from talon import Module, Context, actions
 from ...user_settings import get_list_from_csv # Not the best way to import this, but it works.
-import subprocess
 
 mod = Module()
 ctx = Context()
@@ -18,7 +17,7 @@ default_applications = {
     "slack": "slack"
 }
 
-# Create predefined list of launchable applications. 
+# Create predefined list of launchable applications.
 mod.list("launch", desc="all launchable applications")
 ctx.lists["user.launch"] = get_list_from_csv(
     "applications.csv",
@@ -27,7 +26,7 @@ ctx.lists["user.launch"] = get_list_from_csv(
 )
 
 @mod.action_class
-class Actions:    
-    def launch_application(app: str):
-        """Hacky way of opening applications in Linux."""
-        subprocess.run(app)
+class Actions:
+    def launch_terminal():
+        """Launch gnome-terminal in Linux."""
+        actions.key("ctrl-alt-t")
