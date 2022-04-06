@@ -1,7 +1,7 @@
 app_name,spoken_name
 gnome-terminal,terminal
 google-chrome,chrome
-firefox,firefox
-code,code
-slack,slack
 brave-browser,brave
+firefox
+code
+slack

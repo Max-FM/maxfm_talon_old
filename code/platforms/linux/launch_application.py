@@ -8,25 +8,25 @@ ctx.matches = """
 os: linux
 """
 
-# Defaults do not appear to work if not listed in the csv. Is this due to a bug in user_settings.py?
 default_applications = {
-    "terminal": "gnome-terminal",
     "firefox": "firefox",
     "chrome": "google-chrome",
+    "brave": "brave-browser",
     "code": "code",
     "slack": "slack"
 }
 
-# Create predefined list of launchable applications.
+# Define list of launchable applications to be passed to knausj_talon.
+# TODO: See if is is worth automating, if so, find out how.
 mod.list("launch", desc="all launchable applications")
 ctx.lists["user.launch"] = get_list_from_csv(
     "applications.csv",
     headers=("app_name", "spoken_name"),
-    default=default_applications, # Is this functioning correctly?
+    default=default_applications,
 )
 
 @mod.action_class
 class Actions:
     def launch_terminal():
-        """Launch gnome-terminal in Linux."""
+        """Launch gnome-terminal in Linux (specifically Ubuntu)."""
         actions.key("ctrl-alt-t")
