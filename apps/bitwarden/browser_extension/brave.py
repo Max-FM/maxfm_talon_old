@@ -21,7 +21,7 @@ app: brave
 """
 
 @mod.action_class
-class BrowserActions:
+class ExtensionActions:
     def bitwarden_activate():
         """Activate Bitwarden extension."""
         actions.key("ctrl-shift-u")
