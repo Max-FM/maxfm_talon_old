@@ -1,4 +1,4 @@
-app: brave
+tag: browser
 -
 bit warden activate: user.bitwarden_activate()
 bit warden autofill: user.bitwarden_autofill()
