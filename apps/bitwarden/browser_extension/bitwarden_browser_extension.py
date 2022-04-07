@@ -18,6 +18,6 @@ class ExtensionActions:
     def bitwarden_extension_generate():
         """Generate and copy a new random password to the clipboard."""
         actions.key("ctrl-shift-9")
-    def bitwarden_extension_generate():
+    def bitwarden_extension_lock():
         """Lock the vault."""
         actions.key("ctrl-shift-n")
