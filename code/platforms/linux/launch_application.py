@@ -16,6 +16,7 @@ default_applications = {
     "text editor": "gedit",
     "code": "code",
     "slack": "slack",
+    "discord": "discord",
     "files": "nautilus",
     "settings": "gnome-control-center",
 }
