@@ -5,7 +5,11 @@ ctx.matches = r"""
 app: brave
 """
 
-@ctx.action("user.bitwarden_extension_activate")
-def bitwarden_extension_activate_brave():
-    """Activate Bitwarden extension."""
-    actions.key("ctrl-shift-u")
+@ctx.action_class("user")
+class ExtensionActions:
+    def bitwarden_extension_activate():
+        """Activate Bitwarden extension."""
+        actions.key("ctrl-shift-u")
+    def bitwarden_extension_lock():
+        """Lock the vault."""
+        # No predefined shortcut.
