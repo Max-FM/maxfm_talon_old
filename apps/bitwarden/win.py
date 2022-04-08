@@ -19,10 +19,10 @@ class Actions:
     def bitwarden_copy_username():
         """Copy username to clipboard."""
         actions.key("ctrl-u")
-    def bitwarden_bitwarden_copy_password():
+    def bitwarden_copy_password():
         """Copy password to clipboard."""
         actions.key("ctrl-p")
-    def bitwarden_bitwarden_copy_totp():
+    def bitwarden_copy_totp():
         """Copy one time password to clipboard."""
         actions.key("ctrl-t")
     def bitwarden_password_generator():
