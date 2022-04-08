@@ -2,6 +2,7 @@ from talon import Context, actions
 ctx = Context()
 ctx.matches = r"""
 os: windows
+os: linux
 app: brave
 """
 ctx.tags = ['browser', 'user.tabs']
@@ -9,7 +10,7 @@ ctx.tags = ['browser', 'user.tabs']
 @ctx.action_class('browser')
 class BrowserActions:
     #action(browser.address):
-    
+
     def bookmark():
         actions.key('ctrl-d')
     def bookmark_tabs():
