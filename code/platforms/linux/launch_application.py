@@ -1,5 +1,6 @@
 from talon import Module, Context, actions
 from ...user_settings import get_list_from_csv # Probably not the best way to import this, but it works.
+import subprocess
 
 mod = Module()
 ctx = Context()
@@ -35,3 +36,9 @@ class Actions:
     def launch_terminal():
         """Launch gnome-terminal."""
         actions.key("ctrl-alt-t")
+    def launch_chrome_application(app_id: str, driver: str="brave-browser", profile: str="Profile 1"):
+        """Launch Chrome application."""
+        subprocess.run(
+            [driver, f"--app-id={app_id}", f"--profile-directory={profile}"],
+            start_new_session=True
+        )
