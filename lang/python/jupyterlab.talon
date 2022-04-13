@@ -1,26 +1,27 @@
 title: /JupyterLab/
 -
-
 tag(): user.python
 
-[insert] cell below: key("escape b")
-[insert] cell above: key("escape a")
-cell (delete | wipe | clear): key("escape d d")
-cell markdown: key("escape m")
-cell code: key("escape y")
-cell copy: key("escape c")
-cell paste: key("escape v")
-cell undo: key("escape z")
-cell redo: key("escape shift-z")
+insert [cell] below: key("escape b")
+insert [cell] above: key("escape a")
+(delete | wipe | clear | chuck) cell: key("escape d d")
+markdown cell: key("escape m")
+code cell: key("escape y")
+copy cell: key("escape c")
+paste cell: key("escape v")
+undo cell: key("escape z")
+redo cell: key("escape shift-z")
 
-run cell: key("ctrl-enter")
-run cell next: key("shift-enter")
-run cell insert: key("alt-enter")
-run all cells: key("escape ctrl-a ctrl-enter")
-run all [cells] above: key("escape shift-home ctrl-enter")
+run [cell]: key("ctrl-enter")
+run [cell] next: key("shift-enter")
+run [cell] insert: key("alt-enter")
+run all [cells]: key("escape ctrl-a ctrl-enter")
+run all [cells] [above]: key("escape shift-home ctrl-enter")
 run all [cells] below: key("escape shift-end ctrl-enter")
 
-select all cells: key("escape ctrl-a")
+select [cell] above: key("escape shift-up")
+select [cell] below: key("escape shift-down")
+select all [cells]: key("escape ctrl-a")
 select all [cells] above: key("escape shift-home")
 select all [cells] below: key("escape shift-end")
 
@@ -38,12 +39,12 @@ panel next: key("ctrl-shift-]")
 panel last: key("ctrl-shift-[")
 panel previous: key("ctrl-shift-#")
 
-line comment: key("ctrl-/")
-line indent: key("ctrl-]")
-line (outdent | dedent): key("ctrl-[")
+comment line: key("ctrl-/")
+indent line: key("ctrl-]")
+(outdent | dedent) line: key("ctrl-[")
 
-kernel restart: key("escape 0 0")
-kernel interrupt: key("escape i i")
+restart kernel: key("escape 0 0")
+interrupt kernel: key("escape i i")
 
 command palate: key("ctrl-shift-c")
 simple interface: key("ctrl-shift-d")
