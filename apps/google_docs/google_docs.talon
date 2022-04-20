@@ -128,6 +128,7 @@ input tools menu: key("ctrl-alt-shift-k")
 # Move to previous edit
 # (while viewing revision history or new changes)	holding Ctrl + Alt, press P then R
 # Ctrl + Alt + J
+
 # Table navigation
 
 # Move to the start of the table	holding Ctrl + Alt + Shift, press T then S
@@ -143,6 +144,7 @@ input tools menu: key("ctrl-alt-shift-k")
 # Exit table	holding Ctrl + Alt + Shift, press T then E
 # Move to the next table	holding Ctrl + Alt + Shift, press N then T
 # Move to the previous table	holding Ctrl + Alt + Shift, press P then T
+
 # Other tools and navigation
 
 # Open revision history	Ctrl + Alt + Shift + H
