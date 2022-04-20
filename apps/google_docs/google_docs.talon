@@ -81,8 +81,9 @@ open comment history: key("ctrl-alt-shift-a")
 # Review suggested edits	holding Ctrl + Alt, press O then U
 # Move to next comment	holding Ctrl + Alt, press N then C
 # Move to previous comment	holding Ctrl + Alt, press P then C
-#
+
 # Use Keyboard Shortcuts and Selected Comments
+
 # Reply to current comment	R
 # Move to next comment	J
 # Move to previous comment	K
