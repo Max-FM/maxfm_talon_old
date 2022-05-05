@@ -11,7 +11,7 @@ os: linux
 """
 
 # default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(" ")
-new_alphabet = "air bat cap drum each fine gust heart ink jury crunch look made near ox pit quench red sun trap urge vest whale plex yank zip".split(" ")
+new_alphabet = "air bat cap drum each fine gust heart ink jury crunch look made near oval pit quench red sun trap urge vest whale plex yank zip".split(" ")
 letters_string = "abcdefghijklmnopqrstuvwxyz"
 alphabet = dict(zip(new_alphabet, letters_string))
 ctx.lists["self.letter"] = alphabet
