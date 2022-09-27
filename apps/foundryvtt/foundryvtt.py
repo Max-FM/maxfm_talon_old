@@ -23,6 +23,7 @@ def dice_advantage(m) -> str:
 
 @mod.action_class
 class Actions:
+    #  TODO: See if I can pass this directly to the Foundry VTT API.
     def roll_dice(no_of_dice: int, dice_type: int, modifier_sign: str, modifier: int, advantage: str):
         """Roll dice in FoundryVTT"""
         if advantage:
