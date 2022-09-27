@@ -1,4 +1,5 @@
 title: /Google Docs/
+title: /docs.google.com/
 -
 # Common Actions
 paste without formatting: key("ctrl-shift-v")
