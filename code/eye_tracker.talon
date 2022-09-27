@@ -1,0 +1,5 @@
+tracker wake: user.mouse_wake()
+tracker sleep: user.mouse_sleep()
+tracker calibrate: user.mouse_calibrate()
+tracker zoom: user.mouse_toggle_zoom_mouse()
+cancel zoom: user.mouse_cancel_zoom_mouse()
