@@ -33,6 +33,9 @@ ctx.lists["user.launch"] = get_list_from_csv(
 
 @mod.action_class
 class Actions:
+    def launch_menu():
+        """Open a menu of running apps to open."""
+        actions.key('super')
     def launch_terminal():
         """Launch gnome-terminal."""
         actions.key("super-t")
