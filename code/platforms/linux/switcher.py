@@ -11,4 +11,4 @@ os: linux
 class SwitcherActions:
     def switcher_menu():
         """Open a menu of running apps to switch to"""
-        actions.key('super-s') # Only tested in Ubuntu.
+        actions.key('super')

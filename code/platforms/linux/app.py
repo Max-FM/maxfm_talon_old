@@ -11,13 +11,13 @@ os: linux
 class AppActions:
     def window_maximize():
         """Maximize the active window."""
-        actions.key("super-up")
+        actions.key("super-m")
     def window_minimize():
         """Minimize the active window."""
-        actions.key("super-down")
+        actions.key("super-m")
     def window_split_left():
         """Maximize the window to the left side of the screen."""
-        actions.key("super-left")
+        actions.key("super-ctrl-left")
     def window_split_right():
         """Maximize the window to the right side of the screen."""
-        actions.key("super-right")
+        actions.key("super-ctrl-right")

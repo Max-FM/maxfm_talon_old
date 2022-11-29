@@ -35,7 +35,7 @@ ctx.lists["user.launch"] = get_list_from_csv(
 class Actions:
     def launch_terminal():
         """Launch gnome-terminal."""
-        actions.key("ctrl-alt-t")
+        actions.key("super-t")
     def launch_chrome_application(app_id: str, driver: str="brave-browser", profile: str="Profile 1"):
         """Launch Chrome application."""
         subprocess.run(
