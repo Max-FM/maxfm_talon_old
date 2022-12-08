@@ -21,14 +21,14 @@ class AppActions:
     def window_split_right():
         """Maximize the window to the right side of the screen."""
         actions.key("super-ctrl-right")
-    def window_tiling():
+    def toggle_window_tiling():
         """Toggle Pop_OS! window tiling."""
         actions.key("super-y")
-    def workspace_next():
-        """Switch to the next workspace."""
+    def workspace_down():
+        """Switch to the below workspace."""
         actions.key("super-ctrl-down")
-    def workspace_previous():
-        """Switch to the previous workspace."""
+    def workspace_up():
+        """Switch to the above workspace."""
         actions.key("super-ctrl-up")
     def move_window_previous_workspace():
         """Move window to the previous workspace."""
